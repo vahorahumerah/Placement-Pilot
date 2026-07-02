@@ -1,0 +1,230 @@
+{
+  "eval_set_id": "pilot_test",
+  "name": "pilot_test",
+  "eval_cases": [
+    {
+      "eval_id": "greet_and_initiate",
+      "conversation": [
+        {
+          "invocation_id": "1",
+          "user_content": {
+            "parts": [
+              {
+                "text": "Hello, I am preparing for placements."
+              }
+            ],
+            "role": "user"
+          },
+          "final_response": {
+            "parts": [
+              {
+                "text": "Welcome to PlacementPilot AI! I can help you prepare for placements using our specialized agents: ResumeAgent, InterviewAgent, RoadmapAgent, and CompanyPrepAgent."
+              }
+            ],
+            "role": "model"
+          }
+        }
+      ]
+    },
+    {
+      "eval_id": "route_to_resume_agent",
+      "conversation": [
+        {
+          "invocation_id": "1",
+          "user_content": {
+            "parts": [
+              {
+                "text": "I need help reviewing my resume."
+              }
+            ],
+            "role": "user"
+          },
+          "intermediate_data": {
+            "tool_uses": [
+              {
+                "name": "transfer_to_agent",
+                "args": {
+                  "agent_name": "resume_agent"
+                }
+              }
+            ]
+          },
+          "final_response": {
+            "parts": [
+              {
+                "text": "Transferring you to the ResumeAgent."
+              }
+            ],
+            "role": "model"
+          }
+        }
+      ]
+    },
+    {
+      "eval_id": "check_readiness_score",
+      "conversation": [
+        {
+          "invocation_id": "1",
+          "user_content": {
+            "parts": [
+              {
+                "text": "What is my placement readiness score?"
+              }
+            ],
+            "role": "user"
+          },
+          "intermediate_data": {
+            "tool_uses": [
+              {
+                "name": "get_placement_readiness_score",
+                "args": {}
+              }
+            ]
+          },
+          "final_response": {
+            "parts": [
+              {
+                "text": "Your Placement Readiness Score is 50/100. Let's work on completing your milestones to boost it!"
+              }
+            ],
+            "role": "model"
+          }
+        }
+      ]
+    },
+    {
+      "eval_id": "ats_resume_analysis",
+      "conversation": [
+        {
+          "invocation_id": "1",
+          "user_content": {
+            "parts": [
+              {
+                "text": "I want to run an ATS check on my resume."
+              }
+            ],
+            "role": "user"
+          },
+          "intermediate_data": {
+            "tool_uses": [
+              {
+                "name": "transfer_to_agent",
+                "args": {
+                  "agent_name": "resume_agent"
+                }
+              }
+            ]
+          },
+          "final_response": {
+            "parts": [
+              {
+                "text": "Transferring you to the ResumeAgent to analyze your resume against a job description."
+              }
+            ],
+            "role": "model"
+          }
+        }
+      ]
+    },
+    {
+      "eval_id": "skill_gap_analysis",
+      "conversation": [
+        {
+          "invocation_id": "1",
+          "user_content": {
+            "parts": [
+              {
+                "text": "Can you check my skill gaps for a software engineer role at Google?"
+              }
+            ],
+            "role": "user"
+          },
+          "intermediate_data": {
+            "tool_uses": [
+              {
+                "name": "transfer_to_agent",
+                "args": {
+                  "agent_name": "resume_agent"
+                }
+              }
+            ]
+          },
+          "final_response": {
+            "parts": [
+              {
+                "text": "Transferring you to analyze your skill gaps."
+              }
+            ],
+            "role": "model"
+          }
+        }
+      ]
+    },
+    {
+      "eval_id": "job_tracker",
+      "conversation": [
+        {
+          "invocation_id": "1",
+          "user_content": {
+            "parts": [
+              {
+                "text": "Can you show me my tracked job applications?"
+              }
+            ],
+            "role": "user"
+          },
+          "intermediate_data": {
+            "tool_uses": [
+              {
+                "name": "get_job_tracker",
+                "args": {}
+              }
+            ]
+          },
+          "final_response": {
+            "parts": [
+              {
+                "text": "Here is your job tracker. You currently have no tracked job applications. You can add one using add_job_application."
+              }
+            ],
+            "role": "model"
+          }
+        }
+      ]
+    },
+    {
+      "eval_id": "worldwide_company_prep",
+      "conversation": [
+        {
+          "invocation_id": "1",
+          "user_content": {
+            "parts": [
+              {
+                "text": "I want to prepare for McKinsey."
+              }
+            ],
+            "role": "user"
+          },
+          "intermediate_data": {
+            "tool_uses": [
+              {
+                "name": "transfer_to_agent",
+                "args": {
+                  "agent_name": "company_prep_agent"
+                }
+              }
+            ]
+          },
+          "final_response": {
+            "parts": [
+              {
+                "text": "Transferring you to the CompanyPrepAgent to guide you through McKinsey's recruitment process."
+              }
+            ],
+            "role": "model"
+          }
+        }
+      ]
+    }
+  ]
+}
