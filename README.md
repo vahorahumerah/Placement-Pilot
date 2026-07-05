@@ -342,11 +342,20 @@ adk eval placement_pilot placement_pilot/pilot_test.test.json --config_file_path
 Add screenshots here
 
 - Dashboard
+  <img width="1366" height="768" alt="Screenshot (777)" src="https://github.com/user-attachments/assets/8eb784c2-c5c5-49a1-90cf-ca4b5b9ab0ec" />
+
 - Resume Analysis
-- ATS Score
+  <img width="1366" height="768" alt="Screenshot (781)" src="https://github.com/user-attachments/assets/ba302ade-682f-4fc0-89ba-6d181a98ff65" />
+  
 - Interview Evaluation
+  <img width="1366" height="768" alt="Screenshot (782)" src="https://github.com/user-attachments/assets/f3eba438-34ab-413b-8d30-63fa198d16ad" />
+
 - Company Guide
+  <img width="1366" height="768" alt="Screenshot (783)" src="https://github.com/user-attachments/assets/cee43f39-342b-4a3b-bc49-2493b1f432d7" />
+
 - Job Tracker
+  <img width="1366" height="768" alt="Screenshot (785)" src="https://github.com/user-attachments/assets/3b99f332-be5d-4a25-b35a-2fa08c3f749d" />
+
 
 ---
 
@@ -357,7 +366,7 @@ Add screenshots here
 - LinkedIn Profile Analyzer
 - AI Email Writer
 - Voice Interview
-- RAG Knowledge Base
+- RAG Knowledge Bas
 - Multi-language Support
 - Streamlit Frontend
 - Docker Deployment
