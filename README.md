@@ -258,7 +258,7 @@ placement_pilot/
 ## Clone Repository
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/placement-pilot.git
+git clone https://github.com/vahorahumerah/placement-pilot.git
 
 cd placement-pilot
 ```
@@ -339,18 +339,6 @@ adk eval placement_pilot placement_pilot/pilot_test.test.json --config_file_path
 
 ---
 
-# 📸 Screenshots
-
-Add screenshots here
-
-- Dashboard
-- Resume Analysis
-- ATS Score
-- Interview Evaluation
-- Company Guide
-- Job Tracker
-
----
 
 # 🚀 Future Enhancements
 
